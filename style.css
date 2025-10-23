@@ -5,6 +5,80 @@
   outline: 0;
 }
 
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #fff;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.header-icons i:hover {
+  color: #134677;
+  animation: translatY 0.4s infinite alternate;
+}
+
+@keyframes translatY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+.header-button {
+  padding: 8px 24px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.header-button a {
+  color: #fff;
+}
+
+.header-button:hover {
+  border: 1px solid #134677;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .header-content i {
+    margin-top: 16px;
+    font-size: 34px;
+  }
+  .header-logo img {
+    width: 150px;
+    margin-top: 46px;
+  }
+  .header-button {
+    display: none;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
