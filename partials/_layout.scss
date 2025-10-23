@@ -27,3 +27,39 @@
 }
 
 /* HERO */
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.button-contact {
+    padding: 8px 24px;
+    border: 1px solid $white-normal;
+    border-radius: 5px;    
+    background-color: transparent;
+    color: $white-normal;
+}
+
+.button-contact:hover {
+    border: 1px solid $primary-light;
+    background-color: $primary-light;
+    transition: all 0.3s ease-in-out;
+}
