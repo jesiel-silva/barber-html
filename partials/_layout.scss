@@ -1,6 +1,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 14px;
 }
 
 /* BG HOME  */
@@ -51,15 +52,65 @@
 }
 
 .button-contact {
-    padding: 8px 24px;
-    border: 1px solid $white-normal;
-    border-radius: 5px;    
-    background-color: transparent;
+    padding: 14px 28px;
     color: $white-normal;
+    background-color: $primary-light;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+    border-radius: 5px;
 }
 
 .button-contact:hover {
-    border: 1px solid $primary-light;
-    background-color: $primary-light;
-    transition: all 0.3s ease-in-out;
+    background-color: darken($primary-light, 10%);
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 32px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+/* ABOUT */
+.about {
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    img {
+        max-width: 570px;
+    }    
+}
+
+.about-content div {
+    flex: 1;
 }

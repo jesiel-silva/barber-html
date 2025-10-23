@@ -82,6 +82,7 @@ i {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 14px;
 }
 
 /* BG HOME  */
@@ -128,17 +129,60 @@ i {
 }
 
 .button-contact {
-  padding: 8px 24px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background-color: transparent;
+  padding: 14px 28px;
   color: #fff;
+  background-color: #134677;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+  border-radius: 5px;
 }
 
 .button-contact:hover {
-  border: 1px solid #134677;
-  background-color: #134677;
-  transition: all 0.3s ease-in-out;
+  background-color: rgb(11.9782608696, 44.1304347826, 75.0217391304);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero h1 {
+    font-size: 32px;
+    padding: 0 14px;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+}
+/* ABOUT */
+.about {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #fff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.about-content img {
+  max-width: 570px;
+}
+
+.about-content div {
+  flex: 1;
 }
 
 footer {
