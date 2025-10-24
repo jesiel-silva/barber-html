@@ -282,13 +282,12 @@ i {
     height: auto;
   }
 }
-footer {
-  margin: 0 auto;
-  padding: 1rem;
-  background: #040f1a;
-  color: #353436;
+.footer {
+  background-color: #232224;
+  color: #fff;
   text-align: center;
-  font-family: "Sora", sans-serif;
+  padding: 14px;
+  font-size: 14px;
 }
 
 body {
