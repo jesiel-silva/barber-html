@@ -217,3 +217,14 @@
     
 }
 
+@media screen and (max-width: 768px) {
+    .haircuts {
+        flex-direction: column;
+    }
+
+    .haircut img {
+        height: auto;
+    }
+    
+}
+

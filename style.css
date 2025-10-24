@@ -274,6 +274,14 @@ i {
   cursor: default;
 }
 
+@media screen and (max-width: 768px) {
+  .haircuts {
+    flex-direction: column;
+  }
+  .haircut img {
+    height: auto;
+  }
+}
 footer {
   margin: 0 auto;
   padding: 1rem;
