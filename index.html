@@ -13,6 +13,11 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animate On Scroll Library -->    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <!-- TÍTULO -->
     <title>Barber - Sua Barbearia!</title>
 
@@ -46,7 +51,12 @@
                 </div>
 
                 <div class="header-button">
-                    <a href="#">Agende seu horário</a>
+                    <a 
+                        href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!"
+                        target="_blank"
+                    >
+                        Agende seu horário
+                    </a>
                 </div>
 
             </nav>
@@ -55,7 +65,11 @@
 
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
                 <P>Horário de funcionamento: 09:00 ás 19:00</P>
-                <a href="#" class="button-contact" target="_blank">
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+                    class="button-contact" 
+                    target="_blank"
+                >
                     Agendar horário
                 </a>
 
@@ -170,9 +184,24 @@
 
     </footer>
 
+    <!-- BUTTON WHATSAPP -->
+    <a 
+        href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+        target="_blank"
+        class="whatsapp-button">
+        <img 
+            src="assets/whatssapp.svg" 
+            alt="Botão do WhatsApp"
+        />
+        <span class="tooltip-text">Agende seu horário</span>
+    </a>
+
     <!-- SCRIPT -->
     <script>
-        // Script mínimo
+        // Inicializa a biblioteca AOS
+        AOS.init();
+
+        // Atualiza o ano no rodapé automaticamente
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script src="js/scripts.js" defer></script>
