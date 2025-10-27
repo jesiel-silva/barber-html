@@ -34,7 +34,7 @@
 
             <nav class="header-content container">
 
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -46,11 +46,17 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="assets/logo.svg" alt="Logo da barbearia" />
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img
+                        data-aos="flip-up"
+                        data-aos-dalay="300"
+                        data-aos-duration="1500" 
+                        src="assets/logo.svg" 
+                        alt="Logo da barbearia" 
+                    />
                 </div>
 
-                <div class="header-button">
+                <div class="header-button" data-aos="fade-down">
                     <a 
                         href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!"
                         target="_blank"
@@ -61,10 +67,10 @@
 
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
 
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
-                <P>Horário de funcionamento: 09:00 ás 19:00</P>
+                <P>Horário de funcionamento: <strong>9:00</strong> ás <strong>19:00</strong></P>
                 <a 
                     href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" 
                     class="button-contact" 
@@ -84,11 +90,19 @@
 
         <div class="about-content container">
             
-            <div>
-                <img src="assets/images.svg" alt="Imagem sobre a barbearia">
+            <div data-aos="zoom-in" data-aos-dalay="100">
+                <img 
+                    src="assets/images.svg" 
+                    alt="Imagem sobre a barbearia"
+                />
+
             </div>
 
-            <div class="about-description">
+            <div 
+                class="about-description"
+                data-aos="zoom-out-left" 
+                data-aos-dalay="250"
+            />
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nesciunt recusandae doloribus unde totam a cumque,
@@ -115,7 +129,7 @@
     
         <section class="haircuts">
 
-            <div class="haircut">
+            <div class="haircut" data-aos="zoom-out-right" data-aos-dalay="300">
                 <img src="assets/corte1.png" alt="Corte normal" />
     
                 <div class="haircut-info">
@@ -125,7 +139,7 @@
             </div>
     
     
-            <div class="haircut">
+            <div class="haircut" data-aos="zoom-in" data-aos-dalay="300">
                 <img src="assets/corte2.png" alt="Barba completa" />
     
                 <div class="haircut-info">
@@ -134,7 +148,7 @@
                 </div>
             </div>
     
-            <div class="haircut">
+            <div class="haircut" data-aos="zoom-out-left" data-aos-dalay="300">
                 <img src="assets/corte3.png" alt="Corte e barba" />
     
                 <div class="haircut-info">
@@ -150,7 +164,7 @@
 
     <!-- FOOTER -->    
     <div class="services">        
-        <h2>Venha conhecer</h2>        
+        <h2>Venha nos conhecer</h2>        
     </div>
     
     <iframe
@@ -188,7 +202,10 @@
     <a 
         href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" 
         target="_blank"
-        class="whatsapp-button">
+        class="whatsapp-button"
+        data-aos="zoom-in-left"
+        data-aos-dalay="500"
+    >
         <img 
             src="assets/whatssapp.svg" 
             alt="Botão do WhatsApp"
@@ -196,15 +213,7 @@
         <span class="tooltip-text">Agende seu horário</span>
     </a>
 
-    <!-- SCRIPT -->
-    <script>
-        // Inicializa a biblioteca AOS
-        AOS.init();
-
-        // Atualiza o ano no rodapé automaticamente
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    <script src="js/scripts.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>

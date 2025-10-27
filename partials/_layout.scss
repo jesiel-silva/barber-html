@@ -1,3 +1,5 @@
+
+/* CONTAINER */
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -48,6 +50,10 @@
     p {
         text-align: center;
         margin: 14px 0;
+    }
+
+    strong {
+        color: $red-normal;
     }
 }
 
@@ -127,6 +133,9 @@
         margin-bottom: 14px;
         line-height: 150%;
     }
+    strong {
+        color: $red-normal;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,7 +146,6 @@
 }
 
 /* SERVICES */
-
 .services {
     background-color: $white-normal;
     color: $black-normal;
@@ -146,6 +154,11 @@
     align-items: center;
     justify-content: center;
     padding: 64px 14px;
+
+    h2 {
+        font-size: 32px;
+    }
+ 
 }
 
 .services-content {
@@ -153,7 +166,7 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 32px;
-        margin-bottom: 34px;
+        margin-bottom: 14px;
     }
 
     p {
@@ -228,6 +241,8 @@
     
 }
 
+ 
+/* FOOTER */
 .footer {
     display: flex;
     flex-direction: column;
@@ -250,12 +265,13 @@
     }
 
     .copyright {
-        font-size: 14px;
+        font-size: 16px;
         color: $black-light;
     }
 
 }
 
+/* BOTÃO WHATSAPP */
 .whatsapp-button {
     position: fixed;
     bottom: 14px;
